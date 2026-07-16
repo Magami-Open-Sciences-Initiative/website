@@ -1,50 +1,34 @@
 [
   {
-    "slug": "ai-accelerated-drug-discovery-for-ntds",
-    "title": "AI-Accelerated Drug Discovery for Neglected Tropical Diseases in Sub-Saharan Africa",
-    "authors": "Okafor C, Mensah K, Diallo A, Magami OS Consortium",
-    "journal": "Nature Communications",
+    "slug": "malaria-instruct",
+    "title": "Malaria-Instruct: A Low-Resource Benchmark for Instruction-Tuned LLMs in Antimalarial Drug Discovery",
+    "authors": "Ajala, M., Adesina, C.& Ashimiyu-Abdusalam, Z.",
+    "journal": "Zenodo",
     "year": "2026",
-    "doi": "10.1038/s41467-026-00001-0",
-    "type": "journal",
+    "doi": "10.5281/zenodo.19222923",
+    "type": "data",
     "tags": [
-      "Neglected Tropical Diseases",
-      "AI",
+      "Malaria",
+      "LLM",
       "Drug Discovery"
     ],
-    "excerpt": "A comprehensive study demonstrating how AI-driven screening identified three promising drug candidates for NTDs prevalent in Sub-Saharan Africa.",
-    "abstract": "We present a framework for AI-accelerated drug discovery targeting neglected tropical diseases (NTDs) prevalent in Sub-Saharan Africa. Using a combination of deep learning models for molecular property prediction and virtual screening, we identified seven novel compounds with activity against Schistosoma mansoni and Onchocerca volvulus. Three candidates showed favourable pharmacokinetic profiles and low predicted toxicity in preliminary in silico assays.\n\nOur approach demonstrates that AI-driven"
+    "excerpt": "We present Malaria-Instruct, a specialized dataset designed to evaluate and fine-tune Large Language Models (LLMs) for molecular property prediction, specifically targeting antimalarial activity.",
+    "abstract": "While derived from ChEMBL, this dataset has been significantly restructured, filtered, and formatted for instruction-tuning and virtual screening tasks in resource-constrained research environments.\n\nKey Features:\n\n- Instruction-Response Format: Data is structured as natural language prompts (SMILES strings as input, binary activity as output) to align with the training objectives of modern LLMs (e.g., Gemma, LlaSMO, Mistral).\n- Rigorous Dissimilarity Splitting: Unlike standard random or scaffol"
   },
   {
-    "slug": "training-framework-for-biomedical-ai",
-    "title": "A Scalable Training Framework for AI in Biomedical Research: Lessons from the Magami OS Initiative",
-    "authors": "Diallo A, Okafor C, Mensah K",
-    "journal": "PLOS Computational Biology",
-    "year": "2026",
-    "doi": "10.1371/journal.pcbi.0000000",
-    "type": "journal",
-    "tags": [
-      "Education",
-      "Training",
-      "Capacity Building"
-    ],
-    "excerpt": "A retrospective analysis of our training framework for biomedical researchers across Africa, covering curriculum design, delivery methods, and measured outcomes.",
-    "abstract": "We present a retrospective analysis of the Magami OS training framework, which has reached over 200 biomedical researchers across 12 African countries. The curriculum covers foundational machine learning, molecular modelling, high-performance computing, and ethical AI practices. We report quantitative outcomes including pre- and post-training assessment scores, successfully completed collaborative projects, and participant-reported impact on their research workflows. Key lessons include the impo"
-  },
-  {
-    "slug": "open-source-platform-for-african-researchers",
-    "title": "Magami OS: An Open-Source Platform for AI-Assisted Drug Discovery in Africa",
-    "authors": "Mensah K, Okafor C, Diallo A, et al.",
-    "journal": "Bioinformatics",
+    "slug": "malaria-instrucr benchmarking",
+    "title": "Rigorous Evaluation of Large Language Models for Malaria Drug Discovery: Trade-offs in Performance, Scale, and Resource Utility",
+    "authors": "Ajala, M., Ashimiyu-Abdusalam, Z. & Adesina, C.",
+    "journal": "",
     "year": "2025",
-    "doi": "10.1093/bioinformatics/btx000",
-    "type": "journal",
+    "doi": "",
+    "type": "preprint",
     "tags": [
-      "Open Source",
-      "Bioinformatics",
-      "Platform"
+      "LLM",
+      "Benchmark",
+      "Malaria"
     ],
-    "excerpt": "Introducing the Magami OS platform, an open-source toolkit designed specifically for African researchers conducting AI-assisted drug discovery.",
-    "abstract": "The Magami OS platform is an integrated open-source software ecosystem designed to lower the barrier to AI-assisted drug discovery for researchers across Africa. The platform comprises three core modules: (i) a molecular library management system pre-loaded with compound databases relevant to African diseases, (ii) a suite of machine learning models for property prediction and lead optimization, and (iii) a collaborative workspace for distributed research teams.\n\nWe benchmarked the platform agai"
+    "excerpt": "We present a systematic evaluation of five open-source LLMs on Malaria-Instruct using a rigorous out-of-distribution data split",
+    "abstract": "We present a systematic evaluation of five open-source LLMs (Gemma-2 2B, Gemma-2 9B,\nTxGemma-2B, TxGemma-9B, and LlaSMol-Mistral-7B) on Malaria-Instruct, a curated instruction-following dataset derived from the ChEMBL Legacy Malaria corpus for Malaria virtual screening, on a rigorous out-of-distribution data split, benchmarked against classical ML models (Random Forest, XGBoost) and frontier proprietary models (Gemini 2.5, OpenAI o3) under few-shot conditions."
   }
 ]
