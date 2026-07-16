@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magami Open Sciences Initiative</title>
+<meta name="description" content="Magami OS is a non-profit open-science organisation accelerating drug discovery for African researchers using AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<!-- molecular backgrounds -->
+<div class="mol-bg mol-light">
+  <svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" opacity="0.035">
+    <defs>
+      <pattern id="hex-l" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+        <path d="M30 0 L60 17 L60 35 L30 52 L0 35 L0 17 Z" fill="none" stroke="#1a1a18" stroke-width="0.6"/>
+        <circle cx="30" cy="0" r="1" fill="#1a1a18"/>
+        <circle cx="0" cy="17" r="1" fill="#1a1a18"/>
+        <circle cx="60" cy="35" r="1" fill="#1a1a18"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hex-l)"/>
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="#a3e635" stroke-width="0.3"/>
+    <line x1="0" y1="600" x2="1000" y2="600" stroke="#134e4a" stroke-width="0.3"/>
+  </svg>
+</div>
+<div class="mol-bg mol-dark">
+  <svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" opacity="0.05">
+    <defs>
+      <pattern id="hex-d" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+        <path d="M30 0 L60 17 L60 35 L30 52 L0 35 L0 17 Z" fill="none" stroke="#e8e3dd" stroke-width="0.5"/>
+        <circle cx="30" cy="0" r="1" fill="#e8e3dd"/>
+        <circle cx="0" cy="17" r="1" fill="#e8e3dd"/>
+        <circle cx="60" cy="35" r="1" fill="#e8e3dd"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hex-d)"/>
+    <line x1="0" y1="200" x2="1000" y2="200" stroke="#a3e635" stroke-width="0.3"/>
+    <line x1="0" y1="600" x2="1000" y2="600" stroke="#134e4a" stroke-width="0.3"/>
+  </svg>
+</div>
+
+<header id="header">
+  <div class="container">
+    <div class="logo">Magami<span>OS</span></div>
+    <div class="header-right">
+      <ul class="header-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="publications/index.html">Publications</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+      <a href="#contact" class="header-cta">
+        <span>Contact</span>
+        <span class="icon"></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Magami Open Sciences Initiative</div>
+    <h1>Bridging AI &amp; drug discovery for <em>Africa's</em> researchers</h1>
+    <div class="hero-underline"></div>
+    <p>Magami OS is a non-profit, open-science organisation using AI to accelerate drug discovery for African researchers &mdash; because the continents with the greatest burden deserve the most innovation.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">40+</div>
+        <div class="lbl">targeted diseases</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">54</div>
+        <div class="lbl">African nations</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num" style="font-size:1.7rem">Open</div>
+        <div class="lbl">source tools</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Get involved</a>
+      <a href="#approach" class="btn btn-secondary">Our approach</a>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="process-section" id="about">
+  <div class="container">
+    <div class="section-label">Why we exist</div>
+    <h2 class="section-title">The funding gap meets the greatest burden.</h2>
+    <p class="section-desc">Africa bears the largest burden of infectious and Neglected Tropical Diseases, yet these diseases receive the least global research funding. We exist to close that gap.</p>
+    <div class="process-hint">scroll to discover our purpose</div>
+
+    <div class="process-steps">
+      <div class="process-step" data-step="1">
+        <div class="process-num">
+          <div class="num-track"><span>01</span></div>
+        </div>
+        <div class="step-body">
+          <h3>The funding gap</h3>
+          <p>Africa bears the largest burden of infectious and Neglected Tropical Diseases (NTDs), which simultaneously now receives the least global research funding. This imbalance drives everything we do.</p>
+        </div>
+      </div>
+
+      <div class="process-step" data-step="2">
+        <div class="process-num">
+          <div class="num-track"><span>02</span></div>
+        </div>
+        <div class="step-body">
+          <h3>Our mission</h3>
+          <p>We bridge this gap by collaborating with African researchers at every stage of drug discovery, providing essential AI expertise, resources, and training — because the future of drug discovery should not be dictated by market size.</p>
+        </div>
+      </div>
+
+      <div class="process-step" data-step="3">
+        <div class="process-num">
+          <div class="num-track"><span>03</span></div>
+        </div>
+        <div class="step-body">
+          <h3>Open science</h3>
+          <p>Every tool, every method, every insight we develop is shared freely with the global research community. Our approach is grounded in open science — ensuring accessibility and innovation for every African researcher.</p>
+        </div>
+      </div>
+
+      <div class="process-step" data-step="4">
+        <div class="process-num">
+          <div class="num-track"><span>04</span></div>
+        </div>
+        <div class="step-body">
+          <h3>Our vision</h3>
+          <p>We envision a future where African researchers lead drug discovery for the diseases affecting their communities, empowered by AI, training, and open-source tools built for the challenges that matter most to the continent.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section" id="approach">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Our approach</div>
+      <h2 class="section-title">How we empower researchers.</h2>
+      <p class="section-desc">Three interconnected pillars that guide everything we do.</p>
+    </div>
+
+    <div class="approach-alt">
+      <div class="approach-row reveal reveal-delay-1">
+        <div class="approach-text">
+          <div class="approach-step">01</div>
+          <h3>AI Collaboration for Drug Discovery</h3>
+          <p>We partner with African researchers at any stage of drug discovery to leverage AI technology, providing the necessary expertise and resources for successful outcomes that advance science across the continent.</p>
+        </div>
+        <figure class="approach-figure">
+          <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=85&auto=format&fit=crop" alt="AI drug discovery research" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="approach-row approach-row-reverse reveal reveal-delay-2">
+        <div class="approach-text">
+          <div class="approach-step">02</div>
+          <h3>Capacity Development Training</h3>
+          <p>We offer comprehensive training programmes for biomedical researchers across Africa, empowering them with AI skills to enhance their research capabilities and build a self-sustaining ecosystem of expertise.</p>
+        </div>
+        <figure class="approach-figure">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=85&auto=format&fit=crop" alt="Researchers in training" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="approach-row reveal reveal-delay-2">
+        <div class="approach-text">
+          <div class="approach-step">03</div>
+          <h3>Open Source Software Development</h3>
+          <p>We create and distribute open-source software tools tailored for drug discovery research, ensuring accessibility and innovation for all researchers in Africa regardless of institutional resources.</p>
+        </div>
+        <figure class="approach-figure">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=85&auto=format&fit=crop" alt="Open source development" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions.</h2>
+      <p class="section-desc">Everything you need to know about Magami OS.</p>
+    </div>
+    <div class="faq-list reveal reveal-delay-1">
+      <div class="faq-item">
+        <button class="faq-question">
+          How do you measure impact?
+          <span class="toggle">+</span>
+        </button>
+        <div class="faq-answer">We assess our impact through various metrics, including the number of researchers trained, successful collaborations established, and measurable advancements in drug discovery that result from the use of our resources and training.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What training do you offer?
+          <span class="toggle">+</span>
+        </button>
+        <div class="faq-answer">We offer comprehensive training programmes focused on AI technologies tailored for our partner researchers, which are then extended to other biomedical researchers across Africa to ensure broad access to knowledge and tools.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Who can benefit?
+          <span class="toggle">+</span>
+        </button>
+        <div class="faq-answer">Our services are designed for African researchers at any stage of drug discovery who wish to incorporate AI into their work, as well as biomedical researchers seeking to enhance their capabilities through training and software resources.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          How can I collaborate or support?
+          <span class="toggle">+</span>
+        </button>
+        <div class="faq-answer">We welcome partnerships with research institutions, individual researchers, and funders who share our vision. Reach out via the section below and we'll respond promptly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-block reveal">
+      <h2>Empowering Africa's researchers<br>for a healthier tomorrow.</h2>
+      <p>Join us in transforming drug discovery across the continent.</p>
+      <form class="cta-form" onsubmit="event.preventDefault();alert('Thank you. We\'ll be in touch.')">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-primary">Join</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Publications</div>
+      <h2 class="section-title">Recent research.</h2>
+      <p class="section-desc">Peer-reviewed publications from the Magami OS team and collaborators.</p>
+    </div>
+    <div class="blog-preview reveal reveal-delay-1" id="pub-preview"></div>
+    <div style="margin-top:5vh"><a href="publications/index.html" class="btn btn-secondary">View all publications</a></div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section" id="blog">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Blog</div>
+      <h2 class="section-title">Latest updates.</h2>
+      <p class="section-desc">Stories, research highlights, and technical insights from Magami OS.</p>
+    </div>
+    <div class="blog-preview reveal reveal-delay-1" id="blog-preview"></div>
+    <div style="margin-top:5vh"><a href="blog/index.html" class="btn btn-secondary">View all posts</a></div>
+  </div>
+</section>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="logo" style="font-size:1rem">Magami<span>OS</span></div>
+    <div class="copy">&copy; 2026 Magami Open Sciences Initiative</div>
+    <ul class="foot-nav">
+      <li><a href="mailto:hello@magamios.org">Email</a></li>
+      <li><a href="https://magamios.org" target="_blank">Website</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+fetch('blog/posts/posts.json')
+  .then(function(r) { return r.json(); })
+  .then(function(posts) {
+    var preview = document.getElementById('blog-preview');
+    if (!preview || !posts.length) return;
+    posts.slice(0, 3).forEach(function(post) {
+      var dateObj = post.date ? new Date(post.date) : null;
+      var formatted = dateObj ? dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+      var card = document.createElement('article');
+      card.className = 'blog-preview-card';
+      card.innerHTML = [
+        '<div class="blog-preview-body">',
+        '<div class="blog-preview-meta">',
+        formatted ? '<span>' + formatted + '</span>' : '',
+        '</div>',
+        '<h3>' + post.title + '</h3>',
+        '<p>' + post.excerpt + '</p>',
+        '<a href="blog/post.html?slug=' + post.slug + '" class="blog-card-link">Read more <span class="arrow">&rarr;</span></a>',
+        '</div>'
+      ].join('');
+      preview.appendChild(card);
+    });
+  })
+  .catch(function() {});
+
+fetch('publications/papers/papers.json')
+  .then(function(r) { return r.json(); })
+  .then(function(pubs) {
+    var preview = document.getElementById('pub-preview');
+    if (!preview || !pubs.length) return;
+    pubs.slice(0, 3).forEach(function(pub) {
+      var card = document.createElement('article');
+      card.className = 'blog-preview-card';
+      var tagsHtml = '';
+      if (pub.tags && pub.tags.length) {
+        tagsHtml = '<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">' + pub.tags.slice(0, 3).map(function(t) {
+          return '<span style="font-family:\'JetBrains Mono\',monospace;font-size:clamp(9px,0.55vw,10px);letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border:1px solid var(--border);border-radius:100px;color:var(--text-muted)">' + t + '</span>';
+        }).join('') + '</div>';
+      }
+      card.innerHTML = [
+        '<div class="blog-preview-body">',
+        '<div class="pub-authors">' + pub.authors + '</div>',
+        '<h3>' + pub.title + '</h3>',
+        '<div class="pub-venue">' + pub.journal + ' &middot; ' + pub.year + '</div>',
+        tagsHtml,
+        '</div>'
+      ].join('');
+      preview.appendChild(card);
+    });
+  })
+  .catch(function() {});
+</script>
+</body>
+</html>

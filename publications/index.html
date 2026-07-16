@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Magami Open Sciences Initiative</title>
+<meta name="description" content="Research publications from the Magami OS team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+.pub-header{padding:180px 0 0}
+.pub-header h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(36px,4.5vw,56px);line-height:1;letter-spacing:-.03em;font-variation-settings:'SOFT'80;margin-bottom:16px}
+.pub-header p{color:var(--text-secondary);font-weight:300;max-width:480px;font-size:clamp(15px,1.05vw,16px);line-height:1.7}
+.pub-list{margin-top:6vh;padding-bottom:14vh}
+.pub-item{border-bottom:1px solid var(--border);padding:28px 0;transition:background .3s}
+.pub-item:first-child{border-top:1px solid var(--border)}
+.pub-title{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(17px,1.3vw,21px);letter-spacing:-.02em;margin-bottom:8px;font-variation-settings:'SOFT'80;line-height:1.25;transition:color .3s}
+.pub-item:hover .pub-title{color:var(--accent)}
+.pub-authors{font-size:clamp(13px,0.85vw,14px);color:var(--text-secondary);font-weight:300;margin-bottom:6px}
+.pub-venue{font-family:'JetBrains Mono',monospace;font-size:clamp(10px,0.65vw,11px);letter-spacing:.05em;color:var(--text-muted);margin-bottom:8px}
+.pub-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.pub-tag{font-family:'JetBrains Mono',monospace;font-size:clamp(9px,0.55vw,10px);letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border:1px solid var(--border);border-radius:100px;color:var(--text-muted);transition:border-color .3s,color .3s}
+.pub-tag:hover{border-color:var(--accent);color:var(--accent)}
+.pub-doi{font-size:clamp(11px,0.7vw,12px);color:var(--accent);border-bottom:1px solid transparent;transition:border-color .3s;display:inline-block;margin-bottom:8px}
+.pub-doi:hover{border-color:var(--accent)}
+.pub-abstract{color:var(--text-secondary);font-weight:300;font-size:clamp(13px,0.85vw,14px);line-height:1.65;overflow:hidden;transition:max-height .5s ease;max-height:0}
+.pub-item.open .pub-abstract{max-height:400px;padding-top:12px}
+.pub-toggle{background:none;border:none;cursor:pointer;padding:0;font-family:'Sora',sans-serif;font-size:clamp(11px,0.7vw,12px);font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);transition:color .3s;display:inline-flex;align-items:center;gap:4px;margin-top:4px}
+.pub-toggle:hover{color:var(--accent)}
+.pub-toggle .icn{transition:transform .3s;display:inline-block}
+.pub-item.open .pub-toggle .icn{transform:rotate(180deg)}
+.pub-empty{color:var(--text-muted);padding:6vh 0;text-align:center}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="container">
+    <a href="../" class="logo">Magami<span>OS</span></a>
+    <div class="header-right">
+      <ul class="header-nav">
+        <li><a href="../">Home</a></li>
+        <li><a href="../#about">About</a></li>
+      </ul>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+    </div>
+  </div>
+</header>
+
+<div class="mol-bg mol-light">
+  <svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" opacity="0.035">
+    <defs>
+      <pattern id="hex-pl" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+        <path d="M30 0 L60 17 L60 35 L30 52 L0 35 L0 17 Z" fill="none" stroke="#1a1a18" stroke-width="0.6"/>
+        <circle cx="30" cy="0" r="1" fill="#1a1a18"/>
+        <circle cx="0" cy="17" r="1" fill="#1a1a18"/>
+        <circle cx="60" cy="35" r="1" fill="#1a1a18"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hex-pl)"/>
+  </svg>
+</div>
+<div class="mol-bg mol-dark">
+  <svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" opacity="0.05">
+    <defs>
+      <pattern id="hex-pd" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+        <path d="M30 0 L60 17 L60 35 L30 52 L0 35 L0 17 Z" fill="none" stroke="#e8e3dd" stroke-width="0.5"/>
+        <circle cx="30" cy="0" r="1" fill="#e8e3dd"/>
+        <circle cx="0" cy="17" r="1" fill="#e8e3dd"/>
+        <circle cx="60" cy="35" r="1" fill="#e8e3dd"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hex-pd)"/>
+  </svg>
+</div>
+
+<div class="container pub-header">
+  <div class="section-label">Publications</div>
+  <h1>Our research.</h1>
+  <p>Peer-reviewed publications from the Magami OS team and our collaborators.</p>
+</div>
+
+<section class="container pub-list" id="pub-list"></section>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="logo" style="font-size:1rem">Magami<span>OS</span></div>
+    <div class="copy">&copy; 2026 Magami Open Sciences Initiative</div>
+    <ul class="foot-nav">
+      <li><a href="mailto:hello@magamios.org">Email</a></li>
+      <li><a href="https://magamios.org" target="_blank">Website</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+var base = window.location.pathname;
+base = base.substring(0, base.lastIndexOf('/') + 1);
+
+fetch(base + 'papers/papers.json')
+  .then(function(r) { return r.json(); })
+  .then(function(pubs) {
+    var list = document.getElementById('pub-list');
+    if (!pubs.length) {
+      list.innerHTML = '<div class="pub-empty">No publications yet.</div>';
+      return;
+    }
+    pubs.forEach(function(pub) {
+      var item = document.createElement('div');
+      item.className = 'pub-item';
+      var tagsHtml = '';
+      if (pub.tags && pub.tags.length) {
+        tagsHtml = '<div class="pub-tags">' + pub.tags.map(function(t) {
+          return '<span class="pub-tag">' + t + '</span>';
+        }).join('') + '</div>';
+      }
+      var doiHtml = pub.doi ? '<a href="https://doi.org/' + pub.doi + '" target="_blank" rel="noopener" class="pub-doi">doi.org/' + pub.doi + '</a>' : '';
+      item.innerHTML = [
+        '<div class="pub-title">' + pub.title + '</div>',
+        '<div class="pub-authors">' + pub.authors + '</div>',
+        '<div class="pub-venue">' + pub.journal + ' &middot; ' + pub.year + '</div>',
+        tagsHtml,
+        doiHtml,
+        '<div class="pub-abstract">' + pub.abstract + '</div>',
+        '<button class="pub-toggle">View abstract <span class="icn">&darr;</span></button>'
+      ].join('');
+      list.appendChild(item);
+
+      var toggle = item.querySelector('.pub-toggle');
+      toggle.addEventListener('click', function() {
+        item.classList.toggle('open');
+        toggle.innerHTML = item.classList.contains('open')
+          ? 'Hide abstract <span class="icn">&uarr;</span>'
+          : 'View abstract <span class="icn">&darr;</span>';
+      });
+    });
+  })
+  .catch(function() {
+    document.getElementById('pub-list').innerHTML = '<div class="pub-empty">Could not load publications.</div>';
+  });
+</script>
+</body>
+</html>
