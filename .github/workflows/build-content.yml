@@ -1,0 +1,40 @@
+name: Build content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'blog/posts/*.md'
+      - 'publications/papers/*.md'
+      - 'scripts/build-content.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate content JSON
+        run: python3 scripts/build-content.py
+
+      - name: Commit regenerated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog/posts/posts.json publications/papers/papers.json
+          if git diff --cached --quiet; then
+            echo "No content changes to commit."
+          else
+            git commit -m "chore: rebuild content JSON [skip ci]"
+            git push
+          fi

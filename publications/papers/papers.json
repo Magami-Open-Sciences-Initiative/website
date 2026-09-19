@@ -1,5 +1,21 @@
 [
   {
+    "slug": "malaria-instruct-benchmarking",
+    "title": "Rigorous Evaluation of Large Language Models for Malaria Drug Discovery: Trade-offs in Performance, Scale, and Resource Utility",
+    "authors": "Ajala, M., Ashimiyu-Abdusalam, Z. & Adesina, C.",
+    "journal": "Arxiv",
+    "year": "2026",
+    "doi": "arXiv:2608.20418",
+    "type": "preprint",
+    "tags": [
+      "LLM",
+      "Benchmark",
+      "Malaria"
+    ],
+    "excerpt": "We present a systematic evaluation of five open-source LLMs on Malaria-Instruct using a rigorous out-of-distribution data split",
+    "abstract": "We introduce Malaria-Instruct, a curated instruction-following dataset derived from the ChEMBL Legacy Malaria corpus for Malaria virtual screening, and conduct a systematic evaluation of five open-source LLMs; Gemma-2 2B/9B, TxGemma-2B/9B, and LlaSMol-Mistral-7B, on a rigorous out-of-distribution data split. Performance was benchmarked against classical ML models (Random Forest, XGBoost) and frontier proprietary models (Gemini 2.5, OpenAI o3) under few-shot conditions. Fine-tuned LLMs substantia"
+  },
+  {
     "slug": "malaria-instruct",
     "title": "Malaria-Instruct: A Low-Resource Benchmark for Instruction-Tuned LLMs in Antimalarial Drug Discovery",
     "authors": "Ajala, M., Adesina, C.& Ashimiyu-Abdusalam, Z.",
@@ -14,21 +30,5 @@
     ],
     "excerpt": "We present Malaria-Instruct, a specialized dataset designed to evaluate and fine-tune Large Language Models (LLMs) for molecular property prediction, specifically targeting antimalarial activity.",
     "abstract": "While derived from ChEMBL, this dataset has been significantly restructured, filtered, and formatted for instruction-tuning and virtual screening tasks in resource-constrained research environments.\n\nKey Features:\n\n- Instruction-Response Format: Data is structured as natural language prompts (SMILES strings as input, binary activity as output) to align with the training objectives of modern LLMs (e.g., Gemma, LlaSMO, Mistral).\n- Rigorous Dissimilarity Splitting: Unlike standard random or scaffol"
-  },
-  {
-    "slug": "malaria-instruct-benchmarking",
-    "title": "Rigorous Evaluation of Large Language Models for Malaria Drug Discovery: Trade-offs in Performance, Scale, and Resource Utility",
-    "authors": "Ajala, M., Ashimiyu-Abdusalam, Z. & Adesina, C.",
-    "journal": "",
-    "year": "2025",
-    "doi": "",
-    "type": "preprint",
-    "tags": [
-      "LLM",
-      "Benchmark",
-      "Malaria"
-    ],
-    "excerpt": "We present a systematic evaluation of five open-source LLMs on Malaria-Instruct using a rigorous out-of-distribution data split",
-    "abstract": "We present a systematic evaluation of five open-source LLMs (Gemma-2 2B, Gemma-2 9B,\nTxGemma-2B, TxGemma-9B, and LlaSMol-Mistral-7B) on Malaria-Instruct, a curated instruction-following dataset derived from the ChEMBL Legacy Malaria corpus for Malaria virtual screening, on a rigorous out-of-distribution data split, benchmarked against classical ML models (Random Forest, XGBoost) and frontier proprietary models (Gemini 2.5, OpenAI o3) under few-shot conditions."
   }
 ]
